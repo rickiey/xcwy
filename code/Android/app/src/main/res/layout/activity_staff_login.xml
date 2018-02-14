@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/logo"
+        android:layout_marginTop="95dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:id="@+id/ll_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/iv"
+        android:layout_alignLeft="@+id/ll_password"
+        android:layout_alignStart="@+id/ll_password">
+
+        <EditText
+            android:id="@+id/staff_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="请输入手机号"
+            android:inputType="number"
+            android:maxLength="11"
+            android:padding="10dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/ll_number"
+        >
+
+        <EditText
+            android:id="@+id/staff_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:padding="10dp" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_stafflogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/button1"
+        android:text="登录"
+        android:padding="10dp"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_below="@+id/ll_password"
+        android:layout_alignRight="@+id/ll_password"
+        android:layout_alignEnd="@+id/ll_password" />
+
+</RelativeLayout>

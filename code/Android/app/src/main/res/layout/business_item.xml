@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/business_show"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    tools:context="com.sowell.democlient.BusinessDetails"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/item_picture"
+        android:layout_width="80dp"
+        android:layout_height="100dip"
+        android:layout_margin="8dip"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:id="@+id/infos"
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        android:layout_marginRight="5dip"
+        android:layout_weight="3">
+
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="match_parent"
+            android:layout_height="25dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:ellipsize="marquee"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:text="商家名称:"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:singleLine="true" />
+        <TextView
+            android:id="@+id/item_descrption"
+            android:layout_width="match_parent"
+            android:layout_height="37dip"
+            android:layout_below="@+id/item_name"
+            android:ellipsize="marquee"
+            android:maxLength="500"
+            android:maxLines="4"
+            android:scrollHorizontally="false"
+            android:text="商家描述:"
+            android:textColor="#000"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/item_site"
+            android:layout_width="match_parent"
+            android:layout_height="17dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="18dp"
+            android:ellipsize="marquee"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:text="商家地址:"
+            android:textColor="#000"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/item_distance"
+            android:layout_width="match_parent"
+            android:layout_height="17dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#000000"
+            android:textSize="10sp" />
+    </RelativeLayout>
+</LinearLayout>

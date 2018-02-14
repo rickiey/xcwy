@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="订单信息"
+            android:background="@color/white"
+            android:id="@+id/orderinfomation"/>
+
+        <Button
+            android:id="@+id/mycar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF"
+            android:layout_marginTop="10dp"
+            android:text="我的信息" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="修改密码"
+            android:background="#FFF"
+            android:id="@+id/changepassword"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:id="@+id/cancle"
+            android:layout_width="match_parent"
+            android:background="#FFF"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="注销" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="行程无忧 项目组开发"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="18dp"
+        android:textColor="#424242"/>
+</RelativeLayout>

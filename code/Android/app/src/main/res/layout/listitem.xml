@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dip"
+        android:id="@+id/businessname"
+        android:text="商家名称"
+        android:textColor="#000"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dip"
+        android:id="@+id/starttime"
+        android:textColor="#000"
+        android:text="订单时间"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dip"
+        android:textColor="#000"
+        android:id="@+id/type"
+        android:text="选择服务"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dip"
+        android:textColor="#000"
+        android:id="@+id/state"
+        android:text="订单状态"/>
+</LinearLayout>
